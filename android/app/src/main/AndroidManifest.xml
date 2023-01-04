@@ -1,9 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.endreodev.calculadora">
-   <application
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    
+    <application
         android:label="calculadora"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+      
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -23,6 +29,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+                com.google.android.gms.permission.AD_ID
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
